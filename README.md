@@ -13,4 +13,10 @@ experimental
 
 # Expectation
 * Reduce memory usage
+
+# Feature
+* read(batch)
+* transform(not yet)
+* ...
+
 * 
