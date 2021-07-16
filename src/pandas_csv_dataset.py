@@ -23,8 +23,7 @@ class CSVDataset(torch.utils.data.Dataset):
             idx = idx.tolist()
 
         x = next(
-            pd.read_csv(
-                self.path,
+            pd.read_csv(self.path,
                 skiprows=idx * self.chunksize,  #+1 to skip the header
                 chunksize=self.chunksize))
 

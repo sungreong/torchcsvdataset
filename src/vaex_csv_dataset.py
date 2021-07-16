@@ -4,7 +4,7 @@ from sklearn import datasets
 import vaex
 import pandas as pd 
 import numpy as np
-
+from memory_profiler import profile 
 
 
 class VaexDataset(torch.utils.data.Dataset):
