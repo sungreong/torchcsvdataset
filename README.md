@@ -19,4 +19,19 @@ experimental
 * transform(not yet)
 * ...
 
+# Check Memory
+
+* parameter 
+$1 n_samples
+$2 n_features
+$3 batch_size
+
+* output_folder 
+./
+
+
+
+```
+./test/test.sh 1000 5 10 
+```
 * 
