@@ -8,9 +8,11 @@ from memory_profiler import profile
 
 
 class VaexDataset(torch.utils.data.Dataset):
+    
+    @profile
     def __init__(self, path, transform=None):
         self.path = path
-        self.df = vaex.open(self.path)
+        self.df = vaex.open(self.path,shuffle=False)
         self.len = len(self.df)
         self.transform = transform
 
